@@ -2,28 +2,36 @@
 <head>
 <title>uhri.com</title>
 </head>
-<body class="v1">
+<body class="v2">
 <style>
 body {background-color: rgb(0, 0, 66);
-color: rgba{255, 255, 255, 1}}
-h1.v1 {color: rgba(255, 204, 0, 1)}
-h1.v0 {color: rgba(255, 204, 0, .5)}
-
+color: rgba(255, 255, 255, 1)}
+h1 {color: rgba(255, 204, 0, 1)}
 
 #biglogo {position: absolute; top:0; left: 0;}
-.logo.v1 {width: 100%}
+
 
 body.v0 .v1 {display: none;}
 body.v0 h1.v0 {color: rgba(255, 204, 0, 1)}
 
 body.v1 h1.v0 {color: rgba(255, 204, 0, 0.5)}
-body.v1 {color: rgba {255, 255, 255, 0.5}}
+body.v1 {color: rgba(255, 255, 255, 0.5)}
+body.v1 .logo.v1 {width: 100%}
+
+body.v2 h1.v0 {color: rgba(255, 204, 0, 0.25)}
+body.v2 {color: rgba(255, 255, 255, 0.25)}
+body.v2 h1.v1 {color: rgba(255, 204, 0, .5)}
+body.v2 .logo.v1 {width: 100%}
 
 </style>
+
 <h1 class="v0">Hello, world</h1>
-<div id="biglogo" class="v1">
-<img class="logo v1" src="images/uhriDotComLogo.svg" />
 <h1 class="v1">It's back...</h1>
+<div id="biglogo" class="v1">
+  <img class="logo v1" src="images/uhriDotComLogo.svg" />
+    <div class="v2">
+      <h1 class="v2">Trying something new here</h1>
+    </div>
 </div>
 </body>
 </html>   
