@@ -2,13 +2,13 @@
 <head>
 <title>uhri.com</title>
 </head>
-<body class="v2">
+<body class="v3">
 <style>
 body {background-color: rgb(0, 0, 66);
 color: rgba(255, 255, 255, 1)}
 h1 {color: rgba(255, 204, 0, 1)}
 
-#biglogo {position: absolute; top:0; left: 0;}
+#biglogo {position: absolute; top:0; left: 0; z-index: 0;}
 
 
 body.v0 .v1 {display: none;}
@@ -23,6 +23,13 @@ body.v2 {color: rgba(255, 255, 255, 0.25)}
 body.v2 h1.v1 {color: rgba(255, 204, 0, .5)}
 body.v2 .logo.v1 {width: 100%}
 
+body.v3 h1.v0 {color: rgba(255, 204, 0, 0.1)}
+body.v3 {color: rgba(255, 255, 255, 0.1)}
+body.v3 h1.v1 {color: rgba(255, 204, 0, .25)}
+body.v3 h1.v2 {color: rgba(255, 204, 0, .5)	}
+body.v3 .logo.v1 {width: 100%}
+#bootDiv{position: absolute; z-index: 1; top: 50px; right: 0;}
+
 </style>
 
 <h1 class="v0">Hello, world</h1>
@@ -32,6 +39,9 @@ body.v2 .logo.v1 {width: 100%}
     <div class="v2">
       <h1 class="v2">Trying something new here</h1>
     </div>
+</div>
+<div id="bootDiv" class="v3">
+	<a href="about.html"><img src="images/boot.png" height="153" width="150" alt="About" /></a>
 </div>
 </body>
 </html>   
